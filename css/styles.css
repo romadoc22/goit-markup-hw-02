@@ -1,0 +1,59 @@
+:root {
+  --primary-text-color: #212121;
+  --title-tex-color: #757575;
+  --accent-color: #2196f3;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: #f5f5f5;
+}
+
+.logo-title {
+  color: var(--accent-color);
+}
+.logo:hover,
+.logo-title:hover,
+.logo:focus,
+.logo-title:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* site-nav */
+.blue {
+  color: var(--accent-color);
+}
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero-title {
+  color: var(--primary-text-color);
+}
+
+/* secton */
+
+.section-title {
+  color: var(--primary-text-color);
+}
+/* основний колір тексту, колір підпису посади #212121 */
+/* додатковий колір тексту (заголовки, колір імен і тд) #757575 */
+/* колір логотипу, посилань 2196F3 */
+/* додатк фон букв футера #FFFFFF 60% */
+/*  колір адреси, напис на банері #FFFFFF */
+/* колір фону основний F5F5F5 */
+/* фон навігації #FFFFFF */
+/* фон осн сторінки, фон футера #2F303A */
+/* фон зразків роботи #F5F5F5 */
+/* фон наша команда #F5F4FA */
