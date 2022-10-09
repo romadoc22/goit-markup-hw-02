@@ -11,21 +11,18 @@ body {
 .logo-title {
   color: var(--accent-color);
 }
-.logo:hover,
+/* .logo:hover,
 .logo-title:hover,
 .logo:focus,
 .logo-title:focus {
   color: var(--accent-color);
-}
+} */
 
 .list {
   list-style: none;
 }
 
 /* site-nav */
-.blue {
-  color: var(--accent-color);
-}
 .site-nav .link {
   color: var(--primary-text-color);
 }
