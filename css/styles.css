@@ -20,7 +20,7 @@ body {
   letter-spacing: 0.03em;
 }
 
- .logo-title {
+.logo-title {
   color: var(--accent-color);
 }
 
@@ -40,10 +40,32 @@ body {
   color: var(--primary-text-color);
 }
 .site-nav .link:hover,
-.site-nav .link:focus
-.site-nav .link.current 
- {
+.site-nav .link:focus {
   color: var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* auth-nav */
+
+.auth-nav .link {
+  color: var(--primary-text-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
   color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
@@ -58,7 +80,19 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  }
+}
+
+/* button */
+
+.button {
+  color: var(--primary-text-color);
+  background: #f5f4fa;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
 
 /* secton */
 
@@ -67,8 +101,88 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+}
+
+.title-preferens {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
+
+.p-preferens {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.title-examples {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.team-title {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.p-team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* footer */
+
+.geo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: #2f303a;
+}
+
+.mailtotel {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background: #2f303a;
+}
+
+/* portfolio */
+
+.foto-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.p-portfolio {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--title-tex-color);
+}
+
 /* основний колір тексту, колір підпису посади #212121 */
 /* додатковий колір тексту (заголовки, колір імен і тд) #757575 */
 /* колір логотипу, посилань 2196F3 */
