@@ -2,13 +2,16 @@
   --primary-text-color: #212121;
   --title-tex-color: #757575;
   --accent-color: #2196f3;
+  --pimary-white-color: #ffffff;
+  --secondary-white-color: #f5f5f5;
 }
 
 body {
   color: var(--primary-text-color);
-  background-color: #f5f5f5;
+  background-color: var(--secondary-white-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
+  cursor: pointer;
 }
 
 .logo {
@@ -38,14 +41,14 @@ body {
 /* site-nav */
 .site-nav .link {
   color: var(--primary-text-color);
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
 
 .site-nav .link.current {
@@ -56,8 +59,6 @@ body {
 
 .auth-nav .link {
   color: var(--primary-text-color);
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -87,11 +88,27 @@ body {
 .button {
   color: var(--primary-text-color);
   background: #f5f4fa;
-  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--pimary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button :hover,
+.button :focus,
+.link :hover,
+.link :focus {
+  background-color: var(--accent-color);
+  color: var(--pimary-white-color);
 }
 
 /* secton */
@@ -104,7 +121,6 @@ body {
 }
 
 .title-preferens {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -145,18 +161,15 @@ body {
 /* footer */
 
 .geo {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--pimary-white-color);
   background: #2f303a;
 }
 
 .mailtotel {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
