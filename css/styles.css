@@ -4,14 +4,15 @@
   --accent-color: #2196f3;
   --pimary-white-color: #ffffff;
   --secondary-white-color: #f5f5f5;
+  --primary-background-color: #2f303a;
+  --footer-color: rgba(255, 255, 255, 0.6);
+  --color-btn-bg: #f5f4fa;
 }
 
 body {
   color: var(--primary-text-color);
   background-color: var(--secondary-white-color);
   font-family: Roboto, sans-serif;
-  font-style: normal;
-  cursor: pointer;
 }
 
 .logo {
@@ -19,22 +20,23 @@ body {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .logo-title {
   color: var(--accent-color);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
-/* .logo:hover,
-.logo-title:hover,
-.logo:focus,
-.logo-title:focus {
-  color: var(--accent-color);
-}  */
-
-.list {
+.list,
+.filter {
   list-style: none;
 }
 
@@ -45,6 +47,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -63,6 +66,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .auth-nav .link:hover,
@@ -76,23 +80,15 @@ body {
 
 /* hero */
 .hero-title {
-  color: var(--primary-text-color);
+  color: var(--pimary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  background-color: var(--primary-background-color);
 }
 
 /* button */
-
-.button {
-  color: var(--primary-text-color);
-  background: #f5f4fa;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-}
 
 .hero-button {
   font-weight: 700;
@@ -101,10 +97,10 @@ body {
   letter-spacing: 0.06em;
   color: var(--pimary-white-color);
   background-color: var(--accent-color);
+  cursor: pointer;
+  border: none;
 }
 
-.button :hover,
-.button :focus,
 .link :hover,
 .link :focus {
   background-color: var(--accent-color);
@@ -121,61 +117,75 @@ body {
 }
 
 .title-preferens {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
 .p-preferens {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--title-tex-color);
 }
 
 .title-examples {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
 
-.team-title {
+.filter-btn button {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.62;
   letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--color-btn-bg);
+}
+
+.filter-btn :hover,
+.filter-btn :focus {
+  background-color: var(--accent-color);
+  color: var(--pimary-white-color);
 }
 
 .p-team {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--title-tex-color);
 }
 
 /* footer */
+.footer {
+  background-color: var(--primary-background-color);
+}
 
-.geo {
-  font-weight: 400;
+.link-footer .geo {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--pimary-white-color);
-  background: #2f303a;
+  background: var(--primary-background-color);
 }
 
-.mailtotel {
-  font-weight: 400;
+.link-footer a {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  background: #2f303a;
+  color: var(--footer-color);
+  background: var(--primary-background-color);
+  text-decoration: none;
+}
+
+.link-footer :hover,
+.link-footer :focus {
+  color: var(--accent-color);
 }
 
 /* portfolio */
@@ -196,13 +206,16 @@ body {
   color: var(--title-tex-color);
 }
 
-/* основний колір тексту, колір підпису посади #212121 */
-/* додатковий колір тексту (заголовки, колір імен і тд) #757575 */
-/* колір логотипу, посилань 2196F3 */
-/* додатк фон букв футера #FFFFFF 60% */
-/*  колір адреси, напис на банері #FFFFFF */
-/* колір фону основний F5F5F5 */
-/* фон навігації #FFFFFF */
-/* фон осн сторінки, фон футера #2F303A */
-/* фон зразків роботи #F5F5F5 */
-/* фон наша команда #F5F4FA */
+a {
+  text-decoration: none;
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
