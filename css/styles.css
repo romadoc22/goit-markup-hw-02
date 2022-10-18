@@ -13,6 +13,25 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.section-hero, .section-preferens, .section-examples, .section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .logo {
   color: var(--primary-text-color);
@@ -83,6 +102,7 @@ body {
 
 .hero {
   background-color: var(--primary-background-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -91,11 +111,18 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-}
+  margin-top: 200px;
+  margin-bottom: 30px;
+  }
 
 /* button */
 
 .hero-button {
+  display: inline-block;
+  padding: 10px 34px;
+  min-width: 216px;
+  text-align: center;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -104,7 +131,9 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
   border: none;
-}
+  margin: 0;
+  }
+
 
 .link :hover,
 .link :focus {
@@ -112,7 +141,7 @@ body {
   color: var(--pimary-white-color);
 }
 
-/* secton */
+/* section */
 
 .section-title {
   color: var(--primary-text-color);
@@ -125,6 +154,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .p-preferens {
@@ -155,7 +185,11 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--title-tex-color);
-}
+  }
+
+  .container .examples {
+    padding-top: 0;
+  }
 
 /* Кнопки (фільтр) */
 .filter-btn button {
