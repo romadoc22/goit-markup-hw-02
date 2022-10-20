@@ -17,10 +17,17 @@ body {
 /* Утіліти */
 
 .list,
-.filter {
+.filter,
+.list-item {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 h1,
@@ -171,6 +178,7 @@ ul {
   min-width: 216px;
   text-align: center;
   border-radius: 4px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -190,18 +198,24 @@ ul {
 
 /* section */
 
-.list {
+.list-item {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.section-title {
+.itempr {
+  width: 270px;
+}
+
+.itempr .section-preferens {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 
-.title-preferens {
+.itempr .title-preferens {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
